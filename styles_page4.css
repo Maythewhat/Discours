@@ -1,0 +1,36 @@
+/* CSS Document */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+	font-size: 30px;
+	color: #77292A;
+	background: #FFFFFF;
+}
+a {text-decoration: none;
+  color: #B74749;
+}
+
+.content{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	
+}
+.beat {
+	animation: beat 1s infinite alternate;
+	transform-origin: center;
+	text-align: center;
+}
+
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(1.4); }
+}
+
+
+
