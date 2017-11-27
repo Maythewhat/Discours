@@ -1,6 +1,6 @@
 /* CSS Document */
 
-html {
+/*html {
     font-size: 100px;
 }
 
@@ -22,7 +22,7 @@ html {
         font-size: 80px !important;
     }
 }
-
+*/
 body {
     width: 100vw;
     height: 100vh;
@@ -73,23 +73,23 @@ canvas {
 }
 
 .page1 .page-content {
-    background: #EC9496;
-    font-size: 1rem;
+    background:#A0A0A0;
+    font-size: 68px;
 }
 
 .page2 .page-content {
     background: #B74749;
-    font-size: 1rem;
+    font-size: 58px;
 }
 
 .page3 .page-content {
     background: #7C3536;
-    font-size: 1.2rem;
+    font-size: 68px;
 }
 
 .page4 .page-content {
     background: #77292A;
-    font-size: 0.5rem;
+    font-size: 44px;
 }
 
 .citation {
