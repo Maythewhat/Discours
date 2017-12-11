@@ -1,4 +1,5 @@
 // Sons P5js
+var soundPage1;
 var soundPage2;
 var soundPage3;
 var soundPage4;
@@ -8,7 +9,8 @@ var volume;
 function preload() {
     // set the global sound formats
     soundFormats('m4a');
-
+	
+    soundPage1 = loadSound('assets/badinter_1.m4a');
     soundPage2 = loadSound('assets/badinter_2.m4a');
     soundPage3 = loadSound('assets/badinter_3.m4a');
     soundPage4 = loadSound('assets/badinter_4.m4a');
@@ -16,6 +18,8 @@ function preload() {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
+		soundPage1.play();
+
 }
 
 function draw() {
@@ -28,6 +32,7 @@ function draw() {
 	else{
 		volume = (50 - (perc - 50)) / 50;
 	}
+	soundPage1.amp(volume);
     soundPage2.amp(volume);
     soundPage3.amp(volume);
     soundPage4.amp(volume);
@@ -35,6 +40,7 @@ function draw() {
 
 function goPage1() {
 	soundPage2.stop();
+	soundPage1.play();
     var pages = document.getElementById('pages');
     if (pages) {
         pages.style.transform = 'translateX(0)';
@@ -42,6 +48,7 @@ function goPage1() {
 }
 
 function goPage2() {
+	soundPage1.stop();
 	soundPage3.stop();
     soundPage2.play();
     var pages = document.getElementById('pages');
